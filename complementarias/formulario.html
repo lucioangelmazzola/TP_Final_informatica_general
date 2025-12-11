@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonio Garcia Villaran</title>
+    <link href="../css/output.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col">
+    <div class="flex flex-col">
+        <nav class="order-0 flex items-center justify-between py-7 px-10">
+            <div class="text-2xl">
+                <p> LOGO </p>
+            </div>
+            <ul class="flex gap-6">
+                <!-- Menú principal solo para esta hoja ya que varia los links -->
+                <li><a href="../index.html"> Inicio </a></li>
+                <li><a href="../pages/filosofia_y_vision/index.html"> Vision Artista </a></li>
+                <li><a href="../pages/recorrido_del_artista/index.html"> Recorrido </a></li>
+                <li><a href="../pages/hitos.html"> Hitos </a></li>
+                <li><a href="../pages/obras.html"> Obras </a></li>
+                <li><a href="../pages/criticas.html"> Criticas </a></li>
+                <li><a href="../pages/historia/index.html"> Historia </a></li>
+            </ul>
+        </nav>
+
+        <div class="order-1 flex flex-col bg-base-100 w-full rounded-lg shadow-base-300/20 shadow-sm">
+            <h1 class="bg-base-300/10 rounded-t-lg p-4 text-xl font-bold">Formulario</h1>
+            <div class="w-full p-4">
+                <form class="needs-validation peer grid gap-y-4" novalidate>
+                    <!-- Account Details -->
+                    <div class="w-full">
+                        <h6 class="text-lg font-semibold">Utilice una dirección permanente donde pueda recibir correo. </h6>
+                        <hr class="mb-4 mt-2" />
+                    </div>
+                    <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                        <div>
+                        <label class="label-text" for="firstName">First Name </label>
+                        <input id="firstName" type="text" placeholder="John" class="input" required />
+                        <span class="error-message">Please enter your name.</span>
+                        <span class="success-message">Looks good!</span>
+                        </div>
+                        <div>
+                        <label class="label-text" for="lastName">Last Name</label>
+                        <input id="lastName" type="text" placeholder="Doe" class="input" required />
+                        <span class="error-message">Please enter your last name.</span>
+                        <span class="success-message">Looks good!</span>
+                        </div>
+                    </div>
+                    <!-- Email and password -->
+                    <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                        <div>
+                        <label class="label-text" for="userEmail">Email</label>
+                        <input id="userEmail" type="email" class="input" placeholder="john@gmail.com" aria-label="john@gmail.com" required="" />
+                        <span class="error-message">Please enter a valid email</span>
+                        <span class="success-message">Looks good!</span>
+                        </div>
+                    </div>
+                    <!-- Submit button -->
+                    <div class="mt-4">
+                        <button type="submit" name="submitButton" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <footer class="order-2">
+
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="creador.html"
+                    class="bg-gray-400 text-black px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
+                    Contacto
+                    </a>
+                    <a href="formulario.html"
+                    class="bg-gray-400 text-black px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
+                    Formulario
+                    </a>
+                </div>
+
+                <!-- Acá colocare la información mia.. esto ira para todas las paginas -->
+                <address>
+                    <p class="text-white"> Pie de pagina </p>
+                </address>
+        </footer>
+    </div>        
+</body>
+
+</html>
