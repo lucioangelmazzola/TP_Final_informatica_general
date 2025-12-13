@@ -4,88 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antonio Garcia Villaran</title>
+    <title> Formulario </title>
+    <link href="../css/estilos.css" rel="stylesheet">
     <link href="../css/output.css" rel="stylesheet">
 </head>
 
-<body class="flex flex-col">
+<body>
+
     <div class="flex flex-col">
-        <nav class="order-0 flex items-center justify-between py-7 px-10">
+        <nav class="order-1 flex items-center justify-between py-7 px-10 bg-gray-100">
+            
             <div class="text-2xl">
-                <p> LOGO </p>
+                <p> ANTONIO GARCÍA VILLARAN </p>
             </div>
+
             <ul class="flex gap-6">
                 <!-- Menú principal solo para esta hoja ya que varia los links -->
                 <li><a href="../index.html"> Inicio </a></li>
-                <li><a href="../pages/filosofia_y_vision/index.html"> Vision Artista </a></li>
-                <li><a href="../pages/recorrido_del_artista/index.html"> Recorrido </a></li>
+
+                <li>
+                    <a href="../pages/filosofia_y_vision/index.html"> Vision Artista </a>
+                    <ul>
+                        <li><a href="../pages/filosofia_y_vision/hamparte.html"> Hamparte </a></li>
+                        <li><a href="../pages/filosofia_y_vision/queesarte.html"> ¿Qué es el arte? </a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="../pages/recorrido_del_artista/index.html"> Recorrido </a>
+                    <ul>
+                        <li><a href="../pages/recorrido_del_artista/alumno.html"> De alumno </a></li>
+                        <li><a href="../pages/recorrido_del_artista/profesor.html"> De profesor </a></li>
+                    </ul>
+                </li>
+                
                 <li><a href="../pages/hitos.html"> Hitos </a></li>
                 <li><a href="../pages/obras.html"> Obras </a></li>
                 <li><a href="../pages/criticas.html"> Criticas </a></li>
-                <li><a href="../pages/historia/index.html"> Historia </a></li>
+                
+                <li>
+                    <a href="../pages/historia/index.html"> Historia </a>
+                    <ul>
+                        <li><a href="../pages/historia/juego.html"> Juego </a></li>
+                        <li><a href="../pages/historia/galeria.html"> Galeria </a></li>
+                    </ul>
+                </li>
+            
             </ul>
         </nav>
 
-        <div class="order-1 flex flex-col bg-base-100 w-full rounded-lg shadow-base-300/20 shadow-sm">
-            <h1 class="bg-base-300/10 rounded-t-lg p-4 text-xl font-bold">Formulario</h1>
-            <div class="w-full p-4">
-                <form class="needs-validation peer grid gap-y-4" novalidate>
-                    <!-- Account Details -->
-                    <div class="w-full">
-                        <h6 class="text-lg font-semibold">Utilice una dirección permanente donde pueda recibir correo. </h6>
-                        <hr class="mb-4 mt-2" />
-                    </div>
-                    <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-                        <div>
-                        <label class="label-text" for="firstName">First Name </label>
-                        <input id="firstName" type="text" placeholder="John" class="input" required />
-                        <span class="error-message">Please enter your name.</span>
-                        <span class="success-message">Looks good!</span>
-                        </div>
-                        <div>
-                        <label class="label-text" for="lastName">Last Name</label>
-                        <input id="lastName" type="text" placeholder="Doe" class="input" required />
-                        <span class="error-message">Please enter your last name.</span>
-                        <span class="success-message">Looks good!</span>
-                        </div>
-                    </div>
-                    <!-- Email and password -->
-                    <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-                        <div>
-                        <label class="label-text" for="userEmail">Email</label>
-                        <input id="userEmail" type="email" class="input" placeholder="john@gmail.com" aria-label="john@gmail.com" required="" />
-                        <span class="error-message">Please enter a valid email</span>
-                        <span class="success-message">Looks good!</span>
-                        </div>
-                    </div>
-                    <!-- Submit button -->
-                    <div class="mt-4">
-                        <button type="submit" name="submitButton" class="btn btn-primary">Submit</button>
-                    </div>
-                </form>
-            </div>
+        <main class="order-2 flex flex-col items-center justify-center flex-grow px-4 sm:px-6 md:px-10 lg:px-16 py-10 bg-gradient-to-b from-[#2d2d2f] to-[#1a1a1b]">
 
-        </div>
+            <section
+                class="w-full max-w-3xl sm:max-w-4xl bg-[#4a4a4c]/90 backdrop-blur-sm rounded-2xl shadow-2xl p-6 sm:p-10 border border-orange-300/20">
 
-        <footer class="order-2">
+                <h2 class="text-3xl sm:text-4xl font-[Nitemare] text-orange-200 mb-4 text-center drop-shadow-[0_0_8px_#ffb347]">
+                Información personal
+                </h2>
 
-                <div class="flex gap-4 mt-4 md:mt-0">
-                    <a href="creador.html"
-                    class="bg-gray-400 text-black px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
-                    Contacto
-                    </a>
-                    <a href="formulario.html"
-                    class="bg-gray-400 text-black px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
-                    Formulario
-                    </a>
+                <p class="text-sm sm:text-base text-gray-300 mb-8 text-center">
+                Utilice una dirección permanente donde pueda recibir correo.
+                </p>
+
+                <form action="https://formsubmit.co/ fenixsupremef25@gmail.com " method="POST" class="space-y-6">
+
+                <!-- Nombre y Apellido -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                    <label for="nombre" class="block text-sm font-medium mb-1">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" autocomplete="given-name"
+                        class="block w-full rounded-md bg-white/10 px-3 py-2 text-black placeholder-gray-400 outline-none focus:ring-2 focus:ring-orange-300" />
+                    </div>
+
+                    <div>
+                    <label for="apellido" class="block text-sm font-medium mb-1">Apellido</label>
+                    <input id="apellido" name="apellido" type="text" autocomplete="family-name"
+                        class="block w-full rounded-md bg-white/10 px-3 py-2 text-black placeholder-gray-400 outline-none focus:ring-2 focus:ring-orange-300" />
+                    </div>
                 </div>
 
-                <!-- Acá colocare la información mia.. esto ira para todas las paginas -->
-                <address>
-                    <p class="text-white"> Pie de pagina </p>
-                </address>
-        </footer>
-    </div>        
-</body>
+                <!-- Correo electrónico -->
+                <div>
+                    <label for="email" class="block text-sm font-medium mb-1">Correo electrónico</label>
+                    <input id="email" name="email" type="email" autocomplete="email"
+                    class="block w-full rounded-md bg-white/10 px-3 py-2 text-black placeholder-gray-400 outline-none focus:ring-2 focus:ring-orange-300" />
+                </div>
 
+                <!-- Botones -->
+                <div class="flex flex-col sm:flex-row justify-center sm:justify-end gap-4 pt-6">
+                    <button type="reset"
+                    class="px-4 py-2 rounded-md text-white bg-gray-500 hover:bg-gray-600 transition">Cancelar</button>
+                    <button type="submit"
+                    class="px-4 py-2 rounded-md bg-orange-300 text-black font-semibold hover:bg-orange-400 transition">Guardar
+                    y enviar</button>
+                </div>
+                </form>
+            </section>
+            </main>
+
+        <footer class="order-4 flex border-box p-8 bg-black">
+
+            <div class="flex gap-4 mt-4 md:mt-0">
+                <a href="creador.html"
+                class="bg-gray-400 text-white px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
+                Contacto
+                </a>
+                <a href="formulario.html"
+                class="bg-gray-400 text-white px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
+                Formulario
+                </a>
+            </div>
+            <!-- Acá colocare la información mia.. esto ira para todas las paginas -->
+            <address>
+                <p class="text-white"> Todos los derechos reservados. </p>
+            </address>
+        </footer>
+    </div>
+    <script src="../js/validadorform.js"></script>        
+</body>
 </html>
