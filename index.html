@@ -5,27 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antonio Garcia Villaran</title>
+    <link href="css/estilos.css" rel="stylesheet">
     <link href="css/output.css" rel="stylesheet">
 </head>
 
-<body class="flex flex-col">
-    <div class="flex flex-col ">
-        <header class="order-2 box-border p-5 m-5">
+<body>
+
+    <div class="flex flex-col">
+    
+        <header class="flex flex-col bg-gray-100 p-10 order-2">
+            
             <!-- Titulo con letras moviendose para un sentido -->
             <h1> ANTONIO GARCÍA VILLARAN </h1>
-            <div class="flex flex-row border-box p-10 gap-6">
-                <img src="img/antonio_villaran_3.jpg" alt="El_artista_0" width="448" height="299">
-                <p> Antonio García Villarán (Aznalcázar, Sevilla, 11 de julio de 1976) es un youtuber, 
+
+            <div class="flex flex-row p-10" id="fondo">
+
+                <img src="img/villaran_pintor_0.png" alt="El_artista_0" width="448" height="299">
+            
+                <p class="line-clamp-3 p-10" id="parrafos"> Antonio García Villarán (Aznalcázar, Sevilla, 11 de julio de 1976) es un youtuber,
                     divulgador de arte y pintor español. Es conocido por su canal en YouTube, donde comenta y critica 
                     tendencias del arte contemporáneo, y por haber acuñado el término hamparte para referirse a obras 
                     que considera de escaso valor artístico. </p>
+            
             </div>
+
         </header>
 
-        <nav class="order-1 flex items-center justify-between py-7 px-10">
+        <nav class="order-1 flex items-center justify-between py-7 px-10 bg-gray-100">
             
             <div class="text-2xl">
-                <p> LOGO </p>
+                <p> ANTONIO GARCÍA VILLARAN </p>
             </div>
             <ul class="flex gap-6">
                 <!-- Menú principal solo para esta hoja ya que varia los links -->
@@ -61,35 +70,40 @@
             </ul>
         </nav>
         
-        <main class="order-3 border-box p-5 m-5">
+        <main class="order-3 p-5 m-5">
             <!-- Tendremos solo un section ya que la información será poca...  -->
             <section>
                 <h2> BREVE BIOGRAFÍA </h2>
-                <div class="flex flex-row border-box p-10 gap-6">
-                    <p> García Villarán nació en 1976 en la localidad sevillana de Aznalcázar, 
+                <div class="flex flex-row border-box p-10 gap-6" id="fondo">
+                
+                    <p id="parrafos"> García Villarán nació en 1976 en la localidad sevillana de Aznalcázar, 
                         aunque reside desde los 4 años en la ciudad de Sevilla. Comenzó a pintar cuando tenía trece años. 
                         Se licenció y doctoró en Bellas Artes en la Facultad de Bellas Artes de Sevilla en la especialidad de pintura, 
                         ejerciendo la docencia en dicha institución. Es fundador, junto con Nuria Mezquita de Haro, de la editorial 
-                        Cangrejo Pistolero Ediciones. También organizó en Sevilla el festival de Perfopoesía.</p>
+                        Cangrejo Pistolero Ediciones. También organizó en Sevilla el festival de Perfopoesía.
+                    </p>
+                
                     <img src="img/antonio_villaran_0.jpg" alt="El_artista_1" width="338" height="507">
+                
                 </div>
             </section>
         </main>
+       
         <footer class="order-4 flex border-box p-8 bg-black">
 
             <div class="flex gap-4 mt-4 md:mt-0">
                 <a href="complementarias/creador.html"
-                class="bg-gray-400 text-black px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
+                class="bg-gray-400 text-white px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
                 Contacto
                 </a>
                 <a href="complementarias/formulario.html"
-                class="bg-gray-400 text-black px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
+                class="bg-gray-400 text-white px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
                 Formulario
                 </a>
             </div>
             <!-- Acá colocare la información mia.. esto ira para todas las paginas -->
             <address>
-                <p class="text-white"> Pie de pagina </p>
+                <p class="text-white"> Todos los derechos reservados. </p>
             </address>
         </footer>
 

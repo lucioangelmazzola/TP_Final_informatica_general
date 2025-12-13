@@ -5,22 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Criticas </title>
-    <link href="..\css\output.css" rel="stylesheet">
+    <link href="../css/estilos.css" rel="stylesheet">
+    <link href="../css/output.css" rel="stylesheet">
 </head>
 <!-- Espacio Vacio -->
 <body>
     <div class="flex flex-col ">
         
-        <header class="order-2">
-            <h1> Criticas sobre Antonio y el hacia los demas </h1>
+        <header class="flex flex-col bg-gray-100 p-10 order-2">
+            <h1> Criticas sobre Antonio </h1>
         </header>
 
         <!-- Menú de navegación principal -->
 
-        <nav class="order-1 flex items-center justify-between py-7 px-10">
+        <nav class="order-1 flex items-center justify-between py-7 px-10 bg-gray-100">
             
             <div class="text-2xl">
-                <p> LOGO </p>
+                <p> ANTONIO GARCÍA VILLARAN </p>
             </div>
             <ul class="flex gap-6">
                 <!-- Menú principal solo para esta hoja ya que varia los links -->
@@ -55,28 +56,46 @@
             
             </ul>
         </nav>
-        
         <!-- Contenido principal -->
-        <main class="order-3">
-            <section>
-                <p> Villarán ha sido criticado por sus juicios sobre artistas contemporáneos clásicos como Miró o Damien Hirst, 
-                    al afirmar que algunos de ellos carecen de verdadero valor estético, lo que ha generado polémica en la comunidad 
-                    artística.</p>
+        <main class="order-3 bg-gray-100 p-30" id="fondo">
+            <section class="max-w-3xl mx-auto">
 
-                <p> Se le reprocha su tono directo y provocador al cuestionar el sistema del arte contemporáneo, lo que para algunos 
-                    críticos puede resultar más polémico que constructivo. </p>
-                
-                <p> Villarán ha expresado públicamente opiniones contundentes sobre figuras del arte moderno, incluyendo declaraciones
-                    criticando la calidad de Miró, destacando que “lo que pinta Miró no tiene ningún valor” desde su perspectiva 
-                    estética. </p>
+                <blockquote class="border-l-4 border-gray-400 pl-6 mb-10 italic text-gray-700 leading-relaxed">
+                    “Villarán ha sido criticado por sus juicios sobre artistas contemporáneos clásicos como Miró o Damien Hirst, 
+                    al afirmar que algunos de ellos carecen de verdadero valor estético, lo que ha generado polémica en la comunidad 
+                    artística.”
+                </blockquote><br>
+
+                <blockquote class="border-l-4 border-gray-400 pl-6 mb-10 italic text-gray-700 leading-relaxed">
+                    “Se le reprocha su tono directo y provocador al cuestionar el sistema del arte contemporáneo, lo que para algunos 
+                    críticos puede resultar más polémico que constructivo.”
+                </blockquote><br>
+
+                <blockquote class="border-l-4 border-gray-400 pl-6 italic text-gray-700 leading-relaxed">
+                    “Villarán ha expresado públicamente opiniones contundentes sobre figuras del arte moderno, incluyendo declaraciones
+                    criticando la calidad de Miró, destacando que ‘lo que pinta Miró no tiene ningún valor’ desde su perspectiva 
+                    estética.”
+                </blockquote><br>
 
             </section>
         </main>
 
+
         <footer class="order-4 flex border-box p-8 bg-black">
+
+            <div class="flex gap-4 mt-4 md:mt-0">
+                <a href="../complementarias/creador.html"
+                class="bg-gray-400 text-white px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
+                Contacto
+                </a>
+                <a href="../complementarias/formulario.html"
+                class="bg-gray-400 text-white px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
+                Formulario
+                </a>
+            </div>
             <!-- Acá colocare la información mia.. esto ira para todas las paginas -->
             <address>
-                <p class="text-white"> Pie de pagina </p>
+                <p class="text-white"> Todos los derechos reservados. </p>
             </address>
         </footer>
     </div>
