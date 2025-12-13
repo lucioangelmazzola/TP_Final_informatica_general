@@ -66,41 +66,46 @@
                 Utilice una dirección permanente donde pueda recibir correo.
                 </p>
 
-                <form action="https://formsubmit.co/ fenixsupremef25@gmail.com " method="POST" class="space-y-6">
+                <form action="https://formsubmit.co/ fenixsupremef25@gmail.com " method="POST">
 
                 <!-- Nombre y Apellido -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                     <label for="nombre" class="block text-sm font-medium mb-1">Nombre</label>
-                    <input id="nombre" name="nombre" type="text" autocomplete="given-name"
-                        class="block w-full rounded-md bg-white/10 px-3 py-2 text-black placeholder-gray-400 outline-none focus:ring-2 focus:ring-orange-300" />
+                    <input id="nombre" name="nombre" type="text"
+                        class="block w-full rounded-md bg-white/10 px-3 py-2 text-black"
+                        required>
                     </div>
 
                     <div>
                     <label for="apellido" class="block text-sm font-medium mb-1">Apellido</label>
-                    <input id="apellido" name="apellido" type="text" autocomplete="family-name"
-                        class="block w-full rounded-md bg-white/10 px-3 py-2 text-black placeholder-gray-400 outline-none focus:ring-2 focus:ring-orange-300" />
+                    <input id="apellido" name="apellido" type="text"
+                        class="block w-full rounded-md bg-white/10 px-3 py-2 text-black"
+                        required>
                     </div>
                 </div>
 
-                <!-- Correo electrónico -->
+                <!-- Email -->
                 <div>
                     <label for="email" class="block text-sm font-medium mb-1">Correo electrónico</label>
-                    <input id="email" name="email" type="email" autocomplete="email"
-                    class="block w-full rounded-md bg-white/10 px-3 py-2 text-black placeholder-gray-400 outline-none focus:ring-2 focus:ring-orange-300" />
+                    <input id="email" name="email" type="email"
+                    class="block w-full rounded-md bg-white/10 px-3 py-2 text-black"
+                    required>
                 </div>
 
                 <!-- Botones -->
-                <div class="flex flex-col sm:flex-row justify-center sm:justify-end gap-4 pt-6">
-                    <button type="reset"
-                    class="px-4 py-2 rounded-md text-white bg-gray-500 hover:bg-gray-600 transition">Cancelar</button>
-                    <button type="submit"
-                    class="px-4 py-2 rounded-md bg-orange-300 text-black font-semibold hover:bg-orange-400 transition">Guardar
-                    y enviar</button>
+                <div class="flex justify-end gap-4 pt-6">
+                    <button type="reset" class="px-4 py-2 rounded-md bg-orange-500 text-white">
+                    Cancelar
+                    </button>
+                    <button type="submit" class="px-4 py-2 rounded-md bg-orange-300 text-black font-semibold">
+                    Guardar y enviar
+                    </button>
                 </div>
                 </form>
+
             </section>
-            </main>
+        </main>
 
         <footer class="order-4 flex border-box p-8 bg-black">
 
