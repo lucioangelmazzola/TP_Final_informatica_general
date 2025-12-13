@@ -5,20 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> ¿Qué es el arte para Antonio? </title>
+    <link href="../../css/estilos.css" rel="stylesheet">
     <link href="../../css/output.css" rel="stylesheet">
 </head>
 
 <body>
-        <div class="flex flex-col ">
+    <div class="flex flex-col">
         
-        <header class="order-2">
+        <header class="flex flex-col bg-gray-100 p-10 order-2">
+
             <h1> Filosofía y Visión de Antonio García Villarán </h1>
+        
         </header>
 
-        <nav class="order-1 flex items-center justify-between py-7 px-10">
+        <nav class="order-1 flex items-center justify-between py-7 px-10 bg-gray-100">
+
             <div class="text-2xl">
-                <p> LOGO </p>
+                <p> ANTONIO GARCÍA VILLARAN </p>
             </div>
+            
             <ul class="flex gap-6">
                 <!-- Menú principal solo para esta hoja ya que varia los links -->
                 <li><a href="../../index.html"> Inicio </a></li>
@@ -46,22 +51,30 @@
             </ul>
         </nav>
         
-        <main class="order-3">
+        <main class="order-3 p-5 m-5"">
 
             <section>
-                <img src="../../img/antonio_y_su_obra.jpg" alt="antonio_0" width="" height="">
-                <p> Para Antonio García Villarán, el arte es ante todo una disciplina que implica conocimiento, técnica y experiencia, 
-                    y no simplemente una ocurrencia o un gesto vacío de contenido. Desde su perspectiva, el arte requiere un proceso de 
-                    aprendizaje y un compromiso real con el lenguaje visual, la historia del arte y los materiales utilizados. 
-                    Villarán sostiene que la creatividad por sí sola no es suficiente si no está acompañada por un dominio del oficio, 
-                    ya que el arte auténtico se construye a partir del trabajo, la práctica y la comprensión profunda de aquello que se 
-                    quiere expresar.</p>
-                <p> Asimismo, Villarán entiende el arte como una forma de comunicación honesta entre el artista y el espectador, 
-                    donde la obra debe sostenerse por sus propios valores estéticos y conceptuales, sin depender exclusivamente de 
-                    discursos teóricos forzados. Para él, el arte debe ser capaz de generar una experiencia significativa, provocar 
-                    reflexión o emoción, y mantener un diálogo claro con el público. En este sentido, critica las corrientes que 
-                    priorizan la explicación intelectual por encima de la obra en sí, defendiendo un arte que sea comprensible, 
-                    responsable y fundamentado, sin renunciar a la libertad creativa ni al rigor artístico. </p>
+                
+                <div class="flex flex-row border-box p-10 gap-6" id="fondo">
+                    <img src="../../img/antonio_y_su_obra.jpg" alt="antonio_0" width="" height="">
+            
+                    <p> Para Antonio García Villarán, el arte es ante todo una disciplina que implica conocimiento, técnica y experiencia, 
+                        y no simplemente una ocurrencia o un gesto vacío de contenido. Desde su perspectiva, el arte requiere un proceso de 
+                        aprendizaje y un compromiso real con el lenguaje visual, la historia del arte y los materiales utilizados. 
+                        Villarán sostiene que la creatividad por sí sola no es suficiente si no está acompañada por un dominio del oficio, 
+                        ya que el arte auténtico se construye a partir del trabajo, la práctica y la comprensión profunda de aquello que se 
+                        quiere expresar.</p>
+                </div>
+
+                <div class="p-30" id="fondo_1">
+                    <p> Asimismo, Villarán entiende el arte como una forma de comunicación honesta entre el artista y el espectador, 
+                        donde la obra debe sostenerse por sus propios valores estéticos y conceptuales, sin depender exclusivamente de 
+                        discursos teóricos forzados. Para él, el arte debe ser capaz de generar una experiencia significativa, provocar 
+                        reflexión o emoción, y mantener un diálogo claro con el público. En este sentido, critica las corrientes que 
+                        priorizan la explicación intelectual por encima de la obra en sí, defendiendo un arte que sea comprensible, 
+                        responsable y fundamentado, sin renunciar a la libertad creativa ni al rigor artístico. </p>
+                </div>
+           
             </section>
 
         </main>
@@ -69,6 +82,7 @@
         <footer class="order-4 flex border-box p-8 bg-black">
 
             <div class="flex gap-4 mt-4 md:mt-0">
+        
                 <a href="../../complementarias/creador.html"
                 class="bg-gray-400 text-white px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
                 Contacto
@@ -77,12 +91,17 @@
                 class="bg-gray-400 text-white px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
                 Formulario
                 </a>
+        
             </div>
+        
             <!-- Acá colocare la información mia.. esto ira para todas las paginas -->
+        
             <address>
                 <p class="text-white"> Todos los derechos reservados. </p>
             </address>
+        
         </footer>
+    
     </div>
 
 </body>
