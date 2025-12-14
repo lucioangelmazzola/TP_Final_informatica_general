@@ -12,8 +12,8 @@
 <body>
         <div class="flex flex-col ">
         
-        <header class="order-2">
-            <h1></h1>
+        <header class="order-2" >
+            <h1> Juego de preguntas </h1>
         </header>
 
         <nav class="order-1 flex items-center justify-between py-7 px-10 bg-gray-100">
@@ -57,7 +57,20 @@
             </ul>
         </nav>
 
-        <main class="order-3">
+        <main class="order-3 p-30 bg-gray-100">
+
+            <section class="p-10" id="juego">
+                <button id="btnPlay">Play</button>
+                <button id="btnReiniciar">Reiniciar</button>
+
+                <div id="pantallaJuego" class="mt-6 hidden">
+                    <p id="contadorTiempo"></p>
+                    <p id="pregunta"></p>
+                    <div id="opciones" class="flex flex-col gap-4 mt-4"></div>
+                </div>
+
+                <div id="resultado" class="hidden mt-6"></div>
+            </section>
 
         </main>
 
@@ -79,6 +92,6 @@
             </address>
         </footer>
     </div>
-    
+    <script src="../../js/juego.js"></script>
 </body>
 </html>

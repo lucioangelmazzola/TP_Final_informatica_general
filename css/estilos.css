@@ -109,3 +109,93 @@ img {
 .galeria-img:hover {
   transform: scale(1.05);
 }
+
+/* ===============================
+   CONTENEDOR DEL JUEGO
+================================ */
+#juego {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;              /* separación general */
+}
+
+/* ===============================
+   BOTONES PRINCIPALES
+   Play / Reiniciar
+================================ */
+#btnPlay,
+#btnReiniciar {
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Play */
+#btnPlay {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Reiniciar */
+#btnReiniciar {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Hover */
+#btnPlay:hover {
+    background-color: #222;
+    transform: scale(1.05);
+}
+
+#btnReiniciar:hover {
+    background-color: #777;
+    transform: scale(1.05);
+}
+
+/* ===============================
+   PREGUNTA
+================================ */
+#pregunta {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+/* ===============================
+   CONTADOR DE TIEMPO
+================================ */
+#contadorTiempo {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* ===============================
+   OPCIONES (respuestas)
+================================ */
+#opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Botones de opciones */
+.opcion {
+    padding: 12px;
+    background-color: #e5e5e5;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+}
+
+/* Hover opciones */
+.opcion:hover {
+    background-color: #d4d4d4;
+    transform: translateX(4px);
+}
