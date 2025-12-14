@@ -117,32 +117,79 @@
         </nav>
 
         
-        <main class="order-3 flex flex-col justify-center items-center gap-6 p-10">
-            <img src="../img/foto_obra_0.jpg" alt="obra_0">
-            <img src="../img/foto_obra_1.jpg" alt="obra_1">
-            <img src="../img/foto_obra_2.jpg" alt="obra_2">
-            <img src="../img/foto_obra_3.jpg" alt="obra_3">
-            <img src="../img/foto_obra_4.jpg" alt="obra_4">
-            <img src="../img/foto_obra_5.jpg" alt="obra_5">
+        <main class="order-3 w-full max-w-6xl mx-auto p-6">
+
+            <section 
+                class="
+                grid 
+                grid-cols-1 
+                sm:grid-cols-2 
+                lg:grid-cols-3 
+                gap-6
+                "
+            >
+
+                <img 
+                    src="../img/foto_obra_0.jpg" 
+                    alt="obra_0"
+                    class="w-full h-auto rounded-xl shadow-md hover:scale-105 transition"
+                >
+
+                <img 
+                    src="../img/foto_obra_1.jpg" 
+                    alt="obra_1"
+                    class="w-full h-auto rounded-xl shadow-md hover:scale-105 transition"
+                >
+
+                <img 
+                    src="../img/foto_obra_2.jpg" 
+                    alt="obra_2"
+                    class="w-full h-auto rounded-xl shadow-md hover:scale-105 transition"
+                >
+
+                <img 
+                    src="../img/foto_obra_3.jpg" 
+                    alt="obra_3"
+                    class="w-full h-auto rounded-xl shadow-md hover:scale-105 transition"
+                >
+
+                <img 
+                    src="../img/foto_obra_4.jpg" 
+                    alt="obra_4"
+                    class="w-full h-auto rounded-xl shadow-md hover:scale-105 transition"
+                >
+
+                <img 
+                    src="../img/foto_obra_5.jpg" 
+                    alt="obra_5"
+                    class="w-full h-auto rounded-xl shadow-md hover:scale-105 transition"
+                >
+
+            </section>
+
         </main>
 
 
-        <footer class="order-4 flex border-box p-8 bg-black">
+        <footer class="order-4 flex flex-col md:flex-row gap-6 p-8 bg-black justify-between items-center">
 
-            <div class="flex gap-4 mt-4 md:mt-0">
-                <a href="../complementarias/creador.html"
-                class="bg-gray-400 text-white px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
+            <div class="flex gap-4">
+                <a href="complementarias/creador.html"
+                class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-300 transition">
                 Contacto
                 </a>
-                <a href="../complementarias/formulario.html"
-                class="bg-gray-400 text-white px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
+
+                <a href="complementarias/formulario.html"
+                class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-300 transition">
                 Formulario
                 </a>
             </div>
-            <!-- Acá colocare la información mia.. esto ira para todas las paginas -->
+
             <address>
-                <p class="text-white"> Todos los derechos reservados. </p>
+                <p class="text-white text-sm text-center">
+                Todos los derechos reservados.
+                </p>
             </address>
+
         </footer>
     
     </div>

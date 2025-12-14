@@ -118,65 +118,92 @@
 
         </nav>
         
-        <main class="order-3">
-        
-            <section class="flex flex-col border-box p-10 gap-6">
-            
-                <h2> El Hito principal </h2>
+        <main class="order-3 px-4 md:px-8 py-10">
 
-                <div class="flex flex-row p-10" id="fondo">
+            <!-- HITO PRINCIPAL -->
+            <section class="max-w-6xl mx-auto flex flex-col gap-8">
 
-                    <p id="parrafos"> Antonio García Villarán ha consolidado una carrera significativa tanto en la práctica artística como en la 
+                <h2 class="text-center md:text-left">
+                    El Hito principal
+                </h2>
+
+                <div
+                    id="fondo"
+                    class="flex flex-col md:flex-row items-center gap-6 p-6 md:p-10"
+                >
+                    <p
+                        id="parrafos"
+                        class="md:w-2/3"
+                    >
+                        Antonio García Villarán ha consolidado una carrera significativa tanto en la práctica artística como en la 
                         divulgación cultural. Uno de sus hitos principales fue la acuñación del concepto “hamparte”, que desafía y 
                         cuestiona la valoración contemporánea del arte, proponiendo un enfoque que pone énfasis en la técnica, la 
                         experiencia estética y el juicio propio del espectador. Esta idea ha generado debate en círculos artísticos y 
-                        ha sido un elemento definitorio en su carrera como crítico y creador de contenido.</p>
-                    
-                    <img src="../img/manifiesto_hamparte_0.jpg" alt="hamparte" width="432" height="432">
+                        ha sido un elemento definitorio en su carrera como crítico y creador de contenido.
+                    </p>
 
+                    <img
+                        src="../img/manifiesto_hamparte_0.jpg"
+                        alt="hamparte"
+                        class="w-full md:w-1/3 max-w-xs mx-auto rounded-lg"
+                    >
                 </div>
 
-                
             </section>
-            <article class="bg-gray-100">
-            
-                <h2> Otros Hitos </h2>
 
-                <div class="flex flex-col p-30"id="fondo">
-                    
-                    <p id="parrafos"> Otro momento clave de su trayectoria fue el crecimiento exponencial de su canal de YouTube, donde ha acumulado 
+            <!-- OTROS HITOS -->
+            <article class="mt-16">
+
+                <h2 class="text-center md:text-left mb-6">
+                    Otros Hitos
+                </h2>
+
+                <div
+                    id="fondo"
+                    class="max-w-4xl mx-auto flex flex-col gap-6 p-6 md:p-10"
+                >
+                    <p id="parrafos">
+                        Otro momento clave de su trayectoria fue el crecimiento exponencial de su canal de YouTube, donde ha acumulado 
                         millones de seguidores interesados en la crítica del arte y la reflexión estética. Sus vídeos han contribuido no 
                         solo a popularizar conceptos de teoría del arte, sino también a educar a un público amplio en temas que antes se 
-                        consideraban exclusivos del ámbito académico o especializado. </p><br>
-                
-                    
-                    <p id="parrafos"> Además, su presencia en medios tradicionales como la radio y los podcasts más escuchados del mundo hispano, así 
+                        consideraban exclusivos del ámbito académico o especializado.
+                    </p>
+
+                    <p id="parrafos">
+                        Además, su presencia en medios tradicionales como la radio y los podcasts más escuchados del mundo hispano, así 
                         como la publicación de varios libros sobre arte, consolidan su posición como una voz influyente en el diálogo 
                         cultural contemporáneo. Estas actividades han permitido que su enfoque crítico llegue a audiencias diversos, 
-                        transformando la manera en que muchas personas entienden la creación artística. </p>
+                        transformando la manera en que muchas personas entienden la creación artística.
+                    </p>
                 </div>
 
             </article>
-        
+
         </main>
 
-        <footer class="order-4 flex border-box p-8 bg-black">
 
-            <div class="flex gap-4 mt-4 md:mt-0">
-                <a href="../complementarias/creador.html"
-                class="bg-gray-400 text-white px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
+        <footer class="order-4 flex flex-col md:flex-row gap-6 p-8 bg-black justify-between items-center">
+
+            <div class="flex gap-4">
+                <a href="complementarias/creador.html"
+                class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-300 transition">
                 Contacto
                 </a>
-                <a href="../complementarias/formulario.html"
-                class="bg-gray-400 text-white px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
+
+                <a href="complementarias/formulario.html"
+                class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-300 transition">
                 Formulario
                 </a>
             </div>
-            <!-- Acá colocare la información mia.. esto ira para todas las paginas -->
+
             <address>
-                <p class="text-white"> Todos los derechos reservados. </p>
+                <p class="text-white text-sm text-center">
+                Todos los derechos reservados.
+                </p>
             </address>
+
         </footer>
+    
     </div>
     <script src="../js/menuresponsive.js"></script>
 </body>

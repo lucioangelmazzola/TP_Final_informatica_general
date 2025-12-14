@@ -46,7 +46,7 @@
                     </li>
 
                     <li class="has-submenu">
-                        <a href="../filosofia_y_vision/index.html">Recorrido</a>
+                        <a href="../recorrido_del_artista/index.html">Recorrido</a>
                         <ul class="submenu">
                             <li><a href="../recorrido_del_artista/alumno.html">De alumno</a></li>
                             <li><a href="../recorrido_del_artista/profesor.html">De profesor</a></li>
@@ -118,66 +118,98 @@
 
         </nav>
         
-        <main class="order-3">
+        <main class="order-3 px-4 md:px-8 py-10 space-y-16">
 
-            <section>
+            <!-- BREVE HISTORIA -->
+            <section class="max-w-6xl mx-auto space-y-6">
 
-                <h3> Breve Historia </h3>
-                
-                <div class="flex flex-row border-box p-4 gap-6" id="fondo">
+                <h3 class="text-center md:text-left">
+                    Breve Historia
+                </h3>
 
-                    <img src="../../img/antonio_villaran_niño_0.jpg" alt="villaran_niño_0" width="360" height="396">     
-                    
-                    <p id="parrafos"> Antonio García Villarán nació en Aznalcázar, Sevilla, el 11 de julio de 1976, aunque pasó la mayor parte de su 
+                <div
+                    id="fondo"
+                    class="flex flex-col md:flex-row items-center gap-6 p-6 md:p-10"
+                >
+                    <img
+                        src="../../img/antonio_villaran_niño_0.jpg"
+                        alt="villaran_niño_0"
+                        class="w-full md:w-1/3 max-w-xs mx-auto rounded-lg"
+                    >
+
+                    <p
+                        id="parrafos"
+                        class="md:w-2/3"
+                    >
+                        Antonio García Villarán nació en Aznalcázar, Sevilla, el 11 de julio de 1976, aunque pasó la mayor parte de su 
                         vida en la ciudad de Sevilla. Desde niño mostró inclinación por las artes plásticas, comenzando su formación en 
                         pintura a temprana edad. Conforme creció, decidió formalizar esta vocación estudiando en la Facultad de Bellas 
                         Artes de Sevilla, donde se graduó en pintura y escultura antes de obtener un doctorado con mención Cum Laude, 
-                        centrando su investigación en la enseñanza del arte. </p>               
+                        centrando su investigación en la enseñanza del arte.
+                    </p>
                 </div>
 
             </section>
-            <article>
-                
-                <h3> Trayectoria de su carrera artistica </h3>
-                
-                <div class="flex flex-row border-box p-10 gap-6" id="fondo">
 
-                    <div class="p-10">
-                        <p id="parrafos"> Su trayectoria combina la práctica artística con la docencia y la divulgación. Además de su obra plástica, 
+            <!-- TRAYECTORIA -->
+            <article class="max-w-6xl mx-auto space-y-6">
+
+                <h3 class="text-center md:text-left">
+                    Trayectoria de su carrera artística
+                </h3>
+
+                <div
+                    id="fondo"
+                    class="flex flex-col-reverse md:flex-row items-center gap-6 p-6 md:p-10"
+                >
+                    <div class="md:w-2/3">
+                        <p id="parrafos">
+                            Su trayectoria combina la práctica artística con la docencia y la divulgación. Además de su obra plástica, 
                             ha participado en numerosas exposiciones tanto en España como en el extranjero, ha dirigido proyectos editoriales 
-                            y ha publicado libros sobre pensamiento artístico y pedagogía. Su presencia en redes sociales y plataformas como 
-                            YouTube ha ampliado considerablemente su audiencia y ha llevado su visión crítica del arte a públicos no 
-                            tradicionales. </p><br>
+                            y ha publicado libros sobre pensamiento artístico y pedagogía.
+                        </p><br>
 
-                        <p id="parrafos"> Este recorrido ha consolidado a García Villarán como una figura influyente en el panorama del arte contemporáneo 
-                            español, caracterizado por su mezcla de rigor técnico, crítica cultural y compromiso con la educación artística. 
-                            Hoy su trabajo sigue ampliándose, combinando obra, pensamiento y enseñanza en formatos tradicionales 
-                            y digitales. </p>
+                        <p id="parrafos">
+                            Este recorrido ha consolidado a García Villarán como una figura influyente en el panorama del arte contemporáneo 
+                            español, caracterizado por su mezcla de rigor técnico, crítica cultural y compromiso con la educación artística.
+                        </p>
                     </div>
 
-                    <img src="../../img/antonio_de_joven_0.jpg" alt="villaran_joven_0" width="353" height="470">
+                    <img
+                        src="../../img/antonio_de_joven_0.jpg"
+                        alt="villaran_joven_0"
+                        class="w-full md:w-1/3 max-w-xs mx-auto rounded-lg"
+                    >
                 </div>
 
             </article>
+
         </main>
 
-        <footer class="order-4 flex border-box p-8 bg-black">
 
-            <div class="flex gap-4 mt-4 md:mt-0">
-                <a href="../../complementarias/creador.html"
-                class="bg-gray-400 text-white px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
+        <footer class="order-4 flex flex-col md:flex-row gap-6 p-8 bg-black justify-between items-center">
+
+            <div class="flex gap-4">
+                <a href="complementarias/creador.html"
+                class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-300 transition">
                 Contacto
                 </a>
-                <a href="../../complementarias/formulario.html"
-                class="bg-gray-400 text-white px-4 py-2 rounded transition transform hover:-translate-y-1 hover:bg-gray-300 hover:shadow-lg">
+
+                <a href="complementarias/formulario.html"
+                class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-300 transition">
                 Formulario
                 </a>
             </div>
-            <!-- Acá colocare la información mia.. esto ira para todas las paginas -->
+
             <address>
-                <p class="text-white"> Todos los derechos reservados. </p>
+                <p class="text-white text-sm text-center">
+                Todos los derechos reservados.
+                </p>
             </address>
+
         </footer>
+    
+
     </div>
     <script src="../../js/menuresponsive.js"></script>
 </body>
