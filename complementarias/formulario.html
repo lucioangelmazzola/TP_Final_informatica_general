@@ -13,48 +13,107 @@
 
     <div class="flex flex-col">
 
-        <nav class="order-1 flex items-center justify-between py-7 px-10 bg-gray-100">
-            
-            <div class="text-2xl">
-                <p>ANTONIO GARCÍA VILLARAN</p>
+        <!-- Menú principal responsive -->
+        <nav class="order-0 bg-gray-100 px-10 py-7">
+
+            <div class="flex items-center justify-between">
+
+                <div class="text-2xl">
+                    <p>ANTONIO GARCÍA VILLARAN</p>
+                </div>
+
+                <!-- BOTÓN HAMBURGUESA (solo mobile) -->
+                <button id="menu-btn" class="md:hidden text-3xl">
+                    ☰
+                </button>
+
+                <!-- MENÚ DESKTOP -->
+                <ul class="menu-principal gap-6">
+
+                    <li><a href="../index.html">Inicio</a></li>
+
+                    <li class="has-submenu">
+                        <a href="../pages/filosofia_y_vision/index.html">Visión Artista</a>
+                        <ul class="submenu">
+                            <li><a href="../pages/filosofia_y_vision/hamparte.html">Hamparte</a></li>
+                            <li><a href="../pages/filosofia_y_vision/queesarte.html">¿Qué es el arte?</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="../pages/recorrido_del_artista/index.html">Recorrido</a>
+                        <ul class="submenu">
+                            <li><a href="../pages/recorrido_del_artista/alumno.html">De alumno</a></li>
+                            <li><a href="../pages/recorrido_del_artista/profesor.html">De profesor</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../pages/hitos.html">Hitos</a></li>
+                    <li><a href="../pages/obras.html">Obras</a></li>
+                    <li><a href="../pages/criticas.html">Críticas</a></li>
+
+                    <li class="has-submenu">
+                        <a href="../pages/historia/index.html">Historia</a>
+                        <ul class="submenu">
+                            <li><a href="../pages/historia/juego.html">Juego</a></li>
+                            <li><a href="../pages/historia/galeria.html">Galería</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
             </div>
 
-            <ul class="menu-principal flex gap-6">
+            <!-- MENÚ MOBILE -->
+            <ul id="menu-mobile" class="menu-mobile">
 
                 <li><a href="../index.html">Inicio</a></li>
 
-                <li class="has-submenu">
-                <a href="../pages/filosofia_y_vision/index.html">Visión Artista</a>
-                <ul class="submenu">
+                <!-- VISIÓN ARTISTA -->
+                <li class="mobile-submenu">
+                    <a href="../pages/filosofia_y_vision/index.html">
+                    Visión Artista
+                    </a>
+                    <button class="mobile-submenu-btn">Ver más ▾</button>
+                    <ul class="mobile-submenu-list">
                     <li><a href="../pages/filosofia_y_vision/hamparte.html">Hamparte</a></li>
                     <li><a href="../pages/filosofia_y_vision/queesarte.html">¿Qué es el arte?</a></li>
-                </ul>
+                    </ul>
                 </li>
 
-                <li class="has-submenu">
-                <a href="../pages/recorrido_del_artista/index.html">Recorrido</a>
-                <ul class="submenu">
+                <!-- RECORRIDO -->
+                <li class="mobile-submenu">
+                    <a href="../pages/recorrido_del_artista/index.html">
+                    Recorrido
+                    </a>
+                    <button class="mobile-submenu-btn">Ver más ▾</button>
+                    <ul class="mobile-submenu-list">
                     <li><a href="../pages/recorrido_del_artista/alumno.html">De alumno</a></li>
                     <li><a href="../pages/recorrido_del_artista/profesor.html">De profesor</a></li>
-                </ul>
+                    </ul>
                 </li>
 
                 <li><a href="../pages/hitos.html">Hitos</a></li>
                 <li><a href="../pages/obras.html">Obras</a></li>
-                <li><a href="../pages/obras.html">Críticas</a></li>
+                <li><a href="../pages/criticas.html">Críticas</a></li>
 
-                <li class="has-submenu">
-                <a href="../pages/historia/index.html">Historia</a>
-                <ul class="submenu">
+                <!-- HISTORIA -->
+                <li class="mobile-submenu">
+
+                    <a href="../pages/historia/index.html">
+                    Historia
+                    </a>
+                    <button class="mobile-submenu-btn">Ver más ▾</button>
+                    <ul class="mobile-submenu-list">
                     <li><a href="../pages/historia/juego.html">Juego</a></li>
                     <li><a href="../pages/historia/galeria.html">Galería</a></li>
-                </ul>
+                    </ul>
                 </li>
 
             </ul>
+
         </nav>
 
-        <main class="order-2 flex flex-col items-center justify-center flex-grow px-4 sm:px-6 md:px-10 lg:px-16 py-10 bg-gradient-to-b from-[#2d2d2f] to-[#1a1a1b]">
+        <main class="order-1 flex flex-col items-center justify-center flex-grow px-4 sm:px-6 md:px-10 lg:px-16 py-10 bg-gradient-to-b from-[#2d2d2f] to-[#1a1a1b]">
 
             <section
                 class="w-full max-w-3xl sm:max-w-4xl bg-[#4a4a4c]/90 backdrop-blur-sm rounded-2xl shadow-2xl p-6 sm:p-10 border border-orange-300/20">
@@ -108,7 +167,7 @@
             </section>
         </main>
 
-        <footer class="order-4 flex border-box p-8 bg-black">
+        <footer class="order-2 flex border-box p-8 bg-black">
 
             <div class="flex gap-4 mt-4 md:mt-0">
                 <a href="creador.html"
@@ -126,6 +185,7 @@
             </address>
         </footer>
     </div>
-    <script src="../js/validadorform.js"></script>        
+    <script src="../js/validadorform.js"></script>
+    <script src="../js/menuresponsive.js"></script>
 </body>
 </html>

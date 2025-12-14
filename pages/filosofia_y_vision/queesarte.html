@@ -14,49 +14,108 @@
         
         <header class="flex flex-col bg-gray-100 p-10 order-2">
 
-            <h1> Filosofía y Visión de Antonio García Villarán </h1>
+            <h1> ¿Qué es el Arte para Antonio? </h1>
         
         </header>
 
-        <nav class="order-1 flex items-center justify-between py-7 px-10 bg-gray-100">
-            
-            <div class="text-2xl">
-                <p>ANTONIO GARCÍA VILLARAN</p>
+        <!-- Menú principal responsive -->
+        <nav class="order-1 bg-gray-100 px-10 py-7">
+
+            <div class="flex items-center justify-between">
+
+                <div class="text-2xl">
+                    <p>ANTONIO GARCÍA VILLARAN</p>
+                </div>
+
+                <!-- BOTÓN HAMBURGUESA (solo mobile) -->
+                <button id="menu-btn" class="md:hidden text-3xl">
+                    ☰
+                </button>
+
+                <!-- MENÚ DESKTOP -->
+                <ul class="menu-principal gap-6">
+
+                    <li><a href="../../index.html">Inicio</a></li>
+
+                    <li class="has-submenu">
+                        <a href="index.html">Visión Artista</a>
+                        <ul class="submenu">
+                            <li><a href="hamparte.html">Hamparte</a></li>
+                            <li><a href="queesarte.html">¿Qué es el arte?</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="../filosofia_y_vision/index.html">Recorrido</a>
+                        <ul class="submenu">
+                            <li><a href="../recorrido_del_artista/alumno.html">De alumno</a></li>
+                            <li><a href="../recorrido_del_artista/profesor.html">De profesor</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../hitos.html">Hitos</a></li>
+                    <li><a href="../obras.html">Obras</a></li>
+                    <li><a href="../criticas.html">Críticas</a></li>
+
+                    <li class="has-submenu">
+                        <a href="../historia/index.html">Historia</a>
+                        <ul class="submenu">
+                            <li><a href="../historia/juego.html">Juego</a></li>
+                            <li><a href="../historia/galeria.html">Galería</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
             </div>
 
-            <ul class="menu-principal flex gap-6">
+            <!-- MENÚ MOBILE -->
+            <ul id="menu-mobile" class="menu-mobile">
 
                 <li><a href="../../index.html">Inicio</a></li>
 
-                <li class="has-submenu">
-                <a href="index.html">Visión Artista</a>
-                <ul class="submenu">
+                <!-- VISIÓN ARTISTA -->
+                <li class="mobile-submenu">
+                    <a href="index.html">
+                    Visión Artista
+                    </a>
+                    <button class="mobile-submenu-btn">Ver más ▾</button>
+                    <ul class="mobile-submenu-list">
                     <li><a href="hamparte.html">Hamparte</a></li>
                     <li><a href="queesarte.html">¿Qué es el arte?</a></li>
-                </ul>
+                    </ul>
                 </li>
 
-                <li class="has-submenu">
-                <a href="../recorrido_del_artista/index.html">Recorrido</a>
-                <ul class="submenu">
+                <!-- RECORRIDO -->
+                <li class="mobile-submenu">
+                    <a href="../recorrido_del_artista/index.html">
+                    Recorrido
+                    </a>
+                    <button class="mobile-submenu-btn">Ver más ▾</button>
+                    <ul class="mobile-submenu-list">
                     <li><a href="../recorrido_del_artista/alumno.html">De alumno</a></li>
                     <li><a href="../recorrido_del_artista/profesor.html">De profesor</a></li>
-                </ul>
+                    </ul>
                 </li>
 
                 <li><a href="../hitos.html">Hitos</a></li>
                 <li><a href="../obras.html">Obras</a></li>
-                <li><a href="../obras.html">Críticas</a></li>
+                <li><a href="../criticas.html">Críticas</a></li>
 
-                <li class="has-submenu">
-                <a href="../historia/index.html">Historia</a>
-                <ul class="submenu">
+                <!-- HISTORIA -->
+                <li class="mobile-submenu">
+
+                    <a href="../historia/index.html">
+                    Historia
+                    </a>
+                    <button class="mobile-submenu-btn">Ver más ▾</button>
+                    <ul class="mobile-submenu-list">
                     <li><a href="../historia/juego.html">Juego</a></li>
                     <li><a href="../historia/galeria.html">Galería</a></li>
-                </ul>
+                    </ul>
                 </li>
 
             </ul>
+
         </nav>
         
         <main class="order-3 p-5 m-5"">
@@ -111,6 +170,6 @@
         </footer>
     
     </div>
-
+    <script src="../../js/menuresponsive.js"></script>
 </body>
 </html>

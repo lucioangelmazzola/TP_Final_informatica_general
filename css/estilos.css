@@ -199,3 +199,78 @@ img {
     background-color: #d4d4d4;
     transform: translateX(4px);
 }
+
+/* =========================
+   MENU RESPONSIVE FINAL
+========================= */
+
+/* ===== MOBILE (base) ===== */
+
+.menu-principal {
+  display: none;
+}
+
+.menu-mobile {
+  display: none;
+  flex-direction: column;
+  margin-top: 1em;
+  gap: 0.5em;
+}
+
+.menu-mobile.menu-open {
+  display: flex;
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 768px) {
+
+  .menu-principal {
+    display: flex;
+    gap: 1.5em;
+  }
+
+  .menu-mobile {
+    display: none !important;
+  }
+
+  #menu-btn {
+    display: none;
+  }
+}
+
+/* =========================
+   MENU MOBILE AJUSTES
+========================= */
+
+/* menú mobile a la derecha */
+.menu-mobile {
+  align-items: flex-end;
+}
+
+.menu-mobile li {
+  width: 100%;
+  text-align: right;
+}
+
+/* botones de submenú mobile */
+.mobile-submenu-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: right;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+}
+
+/* listas internas */
+.mobile-submenu-list {
+  display: none;
+  flex-direction: column;
+  margin-right: 1em;
+  margin-top: 0.3em;
+}
+
+.mobile-submenu-list.open {
+  display: flex;
+}
