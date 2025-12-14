@@ -96,3 +96,16 @@ img {
 .has-submenu:hover .submenu {
   display: block;
 }
+
+/* ==== Galeria de fotos ==== */
+
+.galeria-img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.galeria-img:hover {
+  transform: scale(1.05);
+}
