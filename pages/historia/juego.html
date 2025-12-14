@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Videojuego </title>
-    <link href="../../css/estilos.css" reL="stylesheet">
+    <link href="../../css/estilos.css" rel="stylesheet">
     <link href="../../css/output.css" rel="stylesheet">
 </head>
 
@@ -118,17 +118,47 @@
 
         <main class="order-3 p-30 bg-gray-100">
 
-            <section class="p-10" id="juego">
-                <button id="btnPlay">Play</button>
-                <button id="btnReiniciar">Reiniciar</button>
+            <section 
+                id="juego"
+                class="max-w-xl mx-auto bg-gray-200 p-6 rounded-lg shadow-md text-center"
+            >
 
-                <div id="pantallaJuego" class="mt-6 hidden">
-                    <p id="contadorTiempo"></p>
-                    <p id="pregunta"></p>
-                    <div id="opciones" class="flex flex-col gap-4 mt-4"></div>
+                <!-- BOTONES -->
+                <div class="flex flex-col sm:flex-row justify-center gap-4 mb-6">
+                    <button 
+                        id="btnPlay"
+                        class="bg-black text-white px-6 py-2 rounded hover:bg-gray-800 transition"
+                    >
+                        Play
+                    </button>
+
+                    <button 
+                        id="btnReiniciar"
+                        class="bg-gray-500 text-white px-6 py-2 rounded hover:bg-gray-600 transition"
+                    >
+                        Reiniciar
+                    </button>
                 </div>
 
-                <div id="resultado" class="hidden mt-6"></div>
+                <!-- PANTALLA DEL JUEGO -->
+                <div id="pantallaJuego" class="hidden space-y-4">
+
+                    <p id="contadorTiempo" class="font-bold"></p>
+
+                    <p id="pregunta" class="text-lg font-semibold"></p>
+
+                    <div 
+                        id="opciones" 
+                        class="flex flex-col gap-3"
+                    ></div>
+                </div>
+
+                <!-- RESULTADO -->
+                <div 
+                    id="resultado" 
+                    class="hidden mt-6 font-semibold"
+                ></div>
+
             </section>
 
         </main>
