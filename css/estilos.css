@@ -50,3 +50,49 @@ h3 {
 img {
     border-radius: 15px;
 }
+
+/* ===== NAV DESKTOP ===== */
+
+.menu-principal > li {
+  position: relative;
+}
+
+.menu-principal a {
+  text-decoration: none;
+  color: #111;
+  padding: 0.25rem 0.5rem;
+}
+
+.menu-principal a:hover {
+  text-decoration: underline;
+}
+
+/* ===== SUBMENÚ ===== */
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f3f4f6;
+  min-width: 220px;
+  padding: 0.5rem 0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  z-index: 50;
+}
+
+.submenu li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+.submenu li a:hover {
+  background-color: #e5e7eb;
+}
+
+/* ===== HOVER ===== */
+
+.has-submenu:hover .submenu {
+  display: block;
+}
