@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Galeria de fotos </title>
+    <link href="../../css/estilos.css" rel="stylesheet">
     <link href="../../css/output.css" rel="stylesheet">
 </head>
 
@@ -15,35 +16,44 @@
             <h1></h1>
         </header>
 
-        <nav class="order-1 flex items-center justify-between py-7 px-10">
+        <nav class="order-1 flex items-center justify-between py-7 px-10 bg-gray-100">
+            
             <div class="text-2xl">
-                <p> LOGO </p>
+                <p>ANTONIO GARCÍA VILLARAN</p>
             </div>
-            <ul class="flex gap-6">
-                <!-- Menú principal solo para esta hoja ya que varia los links -->
-                <li><a href="../../index.html"> Inicio </a></li>
-                <li><a href="../filosofia_y_vision/index.html"> Vision Artista </a>
-                    <ul>
-                        <li><a href="../filosofia_y_vision/hamparte.html"> Hamparte </a></li>
-                        <li><a href="../filosofia_y_vision/queesarte.html"> ¿Qué es el arte? </a></li>
-                    </ul>
+
+            <ul class="menu-principal flex gap-6">
+
+                <li><a href="../../index.html">Inicio</a></li>
+
+                <li class="has-submenu">
+                <a href="../filosofia_y_vision/index.html">Visión Artista</a>
+                <ul class="submenu">
+                    <li><a href="../filosofia_y_vision/hamparte.html">Hamparte</a></li>
+                    <li><a href="../filosofia_y_vision/queesarte.html">¿Qué es el arte?</a></li>
+                </ul>
                 </li>
-                <li><a href="../recorrido_del_artista/index.html"> Recorrido </a>
-                    <ul>
-                        <li><a href="../recorrido_del_artista/alumno.html"> De alumno </a></li>
-                        <li><a href="../recorrido_del_artista/profesor.html"> De profesor </a></li>
-                    </ul>
+
+                <li class="has-submenu">
+                <a href="../recorrido_del_artista/index.html">Recorrido</a>
+                <ul class="submenu">
+                    <li><a href="../recorrido_del_artista/alumno.html">De alumno</a></li>
+                    <li><a href="../recorrido_del_artista/profesor.html">De profesor</a></li>
+                </ul>
                 </li>
-                <li><a href="../hitos.html"> Hitos </a></li>
-                <li><a href="../obras.html"> Obras </a></li>
-                <li><a href="../criticas.html"> Criticas </a></li>
-                <li><a href="index.html"> Historia </a>
-                    <ul>
-                        <li><a href="juego.html"> Juego </a></li>
-                        <li><a href="galeria.html"> Galeria </a></li>
-                    </ul>
+
+                <li><a href="../hitos.html">Hitos</a></li>
+                <li><a href="../obras.html">Obras</a></li>
+                <li><a href="../obras.html">Críticas</a></li>
+
+                <li class="has-submenu">
+                <a href="index.html">Historia</a>
+                <ul class="submenu">
+                    <li><a href="juego.html">Juego</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                </ul>
                 </li>
-            </ul>
+
             </ul>
         </nav>
 
