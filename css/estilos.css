@@ -1,26 +1,33 @@
+/* ===============================
+   TIPOGRAFÍA GENERAL
+================================ */
+
 h1, h2{
     font-size: 8em;
     text-align: center;
     font-weight: 600;
     box-sizing: border-box;
-    padding: 1em 0 1em 0;
+    padding: 1em 0;
     color: #222222;
 }
-
-
 
 h3 {
     font-size: 3em;
     text-align: center;
     font-weight: 600;
     box-sizing: border-box;
-    padding: 1em 2em 1em 2em;
+    padding: 1em 2em;
     color: #222222;
 }
 
-#fondo{
+/* ===============================
+   BLOQUES DE CONTENIDO
+================================ */
+
+#fondo,
+#fondo_1{
     display: flex;
-    flex-direction: center;
+    flex-direction: row;              /* ✅ FIX: antes decía center (inválido) */
     align-items: center;
     background-color: #6b6969;
     color: white;
@@ -28,18 +35,12 @@ h3 {
 }
 
 #fondo_1{
-    display: flex;
-    flex-direction: center;
-    align-items: center;
-    background-color: #6b6969;
-    color: white;
-    margin: 4em 0 0 0;
-    border-radius: 2em 0 2em 0; 
+    margin-top: 4em;
 }
 
 #parrafos{
     text-align: justify;
-    padding: 0 4em 0 4em;
+    padding: 0 4em;
 }
 
 #parrafos_1 {
@@ -49,9 +50,13 @@ h3 {
 
 img {
     border-radius: 15px;
+    max-width: 100%;                  /* ✅ FIX: evita overflow */
+    height: auto;
 }
 
-/* ===== NAV DESKTOP ===== */
+/* ===============================
+   NAV DESKTOP
+================================ */
 
 .menu-principal > li {
   position: relative;
@@ -67,7 +72,9 @@ img {
   text-decoration: underline;
 }
 
-/* ===== SUBMENÚ ===== */
+/* ===============================
+   SUBMENÚ DESKTOP
+================================ */
 
 .submenu {
   display: none;
@@ -91,13 +98,13 @@ img {
   background-color: #e5e7eb;
 }
 
-/* ===== HOVER ===== */
-
 .has-submenu:hover .submenu {
   display: block;
 }
 
-/* ==== Galeria de fotos ==== */
+/* ===============================
+   GALERÍA
+================================ */
 
 .galeria-img {
   width: 100%;
@@ -111,18 +118,19 @@ img {
 }
 
 /* ===============================
-   CONTENEDOR DEL JUEGO
+   JUEGO
 ================================ */
+
 #juego {
     display: flex;
     flex-direction: column;
-    gap: 20px;              /* separación general */
+    gap: 20px;
 }
 
 /* ===============================
-   BOTONES PRINCIPALES
-   Play / Reiniciar
+   BOTONES
 ================================ */
+
 #btnPlay,
 #btnReiniciar {
     padding: 12px 28px;
@@ -134,19 +142,16 @@ img {
     transition: all 0.3s ease;
 }
 
-/* Play */
 #btnPlay {
     background-color: #000;
     color: #fff;
 }
 
-/* Reiniciar */
 #btnReiniciar {
     background-color: #555;
     color: #fff;
 }
 
-/* Hover */
 #btnPlay:hover {
     background-color: #222;
     transform: scale(1.05);
@@ -158,32 +163,26 @@ img {
 }
 
 /* ===============================
-   PREGUNTA
+   PREGUNTAS
 ================================ */
+
 #pregunta {
     font-size: 1.2rem;
     font-weight: 500;
     margin-top: 20px;
 }
 
-/* ===============================
-   CONTADOR DE TIEMPO
-================================ */
 #contadorTiempo {
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-/* ===============================
-   OPCIONES (respuestas)
-================================ */
 #opciones {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-/* Botones de opciones */
 .opcion {
     padding: 12px;
     background-color: #e5e5e5;
@@ -194,17 +193,14 @@ img {
     text-align: left;
 }
 
-/* Hover opciones */
 .opcion:hover {
     background-color: #d4d4d4;
     transform: translateX(4px);
 }
 
-/* =========================
-   MENU RESPONSIVE FINAL
-========================= */
-
-/* ===== MOBILE (base) ===== */
+/* ===============================
+   MENU RESPONSIVE
+================================ */
 
 .menu-principal {
   display: none;
@@ -215,13 +211,43 @@ img {
   flex-direction: column;
   margin-top: 1em;
   gap: 0.5em;
+  align-items: flex-end;
 }
 
 .menu-mobile.menu-open {
   display: flex;
 }
 
-/* ===== DESKTOP ===== */
+.menu-mobile li {
+  width: 100%;
+  text-align: right;
+}
+
+.mobile-submenu-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: right;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+}
+
+.mobile-submenu-list {
+  display: none;
+  flex-direction: column;
+  margin-right: 1em;
+  margin-top: 0.3em;
+}
+
+.mobile-submenu-list.open {
+  display: flex;
+}
+
+/* ===============================
+   DESKTOP
+================================ */
+
 @media (min-width: 768px) {
 
   .menu-principal {
@@ -238,39 +264,134 @@ img {
   }
 }
 
+/* ===============================
+   🔥 FIX RESPONSIVE CRÍTICO
+================================ */
+
+@media (max-width: 768px) {
+
+  h1, h2 {
+    font-size: 3rem;          /* ✅ evita que el título se salga */
+    padding: 1rem 0;
+  }
+
+  h3 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  #parrafos {
+    padding-left: 1rem;       /* ✅ mata el scroll horizontal */
+    padding-right: 1rem;
+  }
+
+  #fondo,
+  #fondo_1 {
+    flex-direction: column;   /* ✅ columna en mobile */
+    padding: 1rem;
+  }
+}
+
+/* ===============================
+   SEGURIDAD EXTRA
+================================ */
+
+body {
+  overflow-x: hidden;         /* ✅ red de seguridad */
+}
+
 /* =========================
-   MENU MOBILE AJUSTES
+   FIX RESPONSIVE GENERAL
 ========================= */
 
-/* menú mobile a la derecha */
-.menu-mobile {
-  align-items: flex-end;
+/* ----- TITULOS ----- */
+h1 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
 }
 
-.menu-mobile li {
-  width: 100%;
-  text-align: right;
+h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
 }
 
-/* botones de submenú mobile */
-.mobile-submenu-btn {
-  background: none;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  text-align: right;
-  width: 100%;
-  padding: 0.25rem 0.5rem;
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
 }
 
-/* listas internas */
-.mobile-submenu-list {
-  display: none;
+/* ----- CONTENEDORES FLEX ----- */
+#fondo,
+#fondo_1 {
   flex-direction: column;
-  margin-right: 1em;
-  margin-top: 0.3em;
+  gap: 1.5rem;
+  padding: 1.5rem;
 }
 
-.mobile-submenu-list.open {
-  display: flex;
+/* desktop */
+@media (min-width: 768px) {
+  #fondo,
+  #fondo_1 {
+    flex-direction: row;
+    padding: 2.5rem;
+  }
+}
+
+/* ----- IMÁGENES ----- */
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* imágenes grandes tipo hero */
+#fondo img {
+  max-width: 450px;
+  width: 100%;
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  #fondo img {
+    max-width: 380px;
+  }
+}
+
+/* ----- TEXTOS ----- */
+#parrafos {
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* desktop */
+@media (min-width: 768px) {
+  #parrafos {
+    padding: 0 2rem;
+    font-size: 1.05rem;
+  }
+}
+
+/* =========================
+   CONTENEDOR CENTRAL DESKTOP
+========================= */
+
+/* secciones principales */
+header,
+main {
+  width: 100%;
+}
+
+/* desktop: limitar ancho */
+@media (min-width: 1024px) {
+
+  header > *,
+  main > section {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* un poco menos de padding lateral */
+  header {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
